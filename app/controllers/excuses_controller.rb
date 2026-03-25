@@ -19,7 +19,7 @@ class ExcusesController < ApplicationController
     "I accidentally signed up for a mime class and couldn't call for help.",
     "I was trying to remember if I left the oven on. I hadn't. Still took 3 hours.",
     "A pigeon stole my to-do list.",
-    "I got personally offended by a notification and needed time to recover.",
+    "I got personally offended by a notification and needed time to recover."
   ]
 
   def index
