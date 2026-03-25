@@ -1,0 +1,61 @@
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia', serif;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 60px 50px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+
+  .card h1 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 40px;
+  }
+
+  .excuse {
+    font-size: 1.6em;
+    color: #222;
+    line-height: 1.5;
+    min-height: 80px;
+    margin-bottom: 50px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.5);
+  }
+</style>
+
+<div class="card">
+  <h1>Excuse Generator</h1>
+  <p class="excuse">"<%= @excuse %>"</p>
+  <%= link_to "Generate Excuse", root_path, class: "btn" %>
+</div>
